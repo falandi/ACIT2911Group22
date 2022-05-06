@@ -1,0 +1,144 @@
+:root {
+    --LightBlue: #47d8e3;
+    --Purple: #575279;
+    --Pink: #b4637a;
+    --Baige: #faf4ed;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--LightBlue);
+}
+
+.Newlist {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+}
+
+#myLists {
+    font-size: 16px;
+    border: solid;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: var(--Purple);
+    word-wrap: break-word;
+    border: solid;
+}
+
+#lists {
+    font-size: 30px;
+}
+
+.new_to-do {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.addBtn {
+    background-color: var(--Baige);
+    border: solid;
+}
+
+.addBtn:hover {
+    background-color: #bb13e1;
+}
+
+#myInput {
+    border: solid;
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.to-do {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Title {
+    margin-left: 20px;
+    font-size: 30px;
+    color: black;
+    text-decoration: underline;
+}
+
+.list {
+    overflow: auto;
+    height: 42vh;
+    width: 50%;
+    background-color: #f5f5f5;
+    border: solid;
+    border-radius: 25px;
+}
+
+#lItem {
+    font-size: 18px;
+    color: black;
+}
+
+.to-do_text {
+    background-color: #f5f5f5;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 5px;
+}
+
+ul li:hover {
+    background-color: lightgray;
+}
+.completeBtn {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.completeBtn:hover {
+    background-color: green;
+}
+
+.removeBtn:hover {
+    background-color: red;
+}
+
+.completed {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Clist {
+    height: 42vh;
+    width: 50%;
+    background-color: #f5f5f5;
+    overflow: auto;
+    border: solid;
+    border-radius: 25px;
+}
+
+.Clist ul {
+    list-style: none;
+}
+
+textarea {
+    font-size: 20px;
+    background-color: white;
+    resize: none;
+    border: none;
+    overflow: hidden;
+}
+
