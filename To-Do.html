@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+/*I think that it's the layout??*/
+<!--wait its gone lol-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="Style/style.js"></script>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="Newlist">
+            <input id="myLists" type="text" placeholder="New List">
+            <button onclick="newList()" class="addBtn">ADD</button>
+        </div>
+        <div>
+            <ul id="lists">
+            </ul>
+        </div>
+    </div>
+
+    <div class="new_to-do">
+        <input id="myInput" type="text" placeholder="New To-Do">
+        <button onclick="newElement()" class="addBtn">ADD</button>
+    </div>
+
+
+    <div class="to-do">
+        <div class="list">
+            <h1 class="Title">To-Do</h1>
+            <ul id="lItem">
+                <li>
+                    <button class="completeBtn" onclick="Completed()"></button>
+                    <textarea class="to-do_text" rows="1" cols="10">Homework</textarea>
+                    <input id="date" type="datetime-local" max="2030-12-31">
+                    <span class="close">
+                        <button class="removeBtn" onclick="Remove()" padding="5px">Remove</button>
+                    </span>
+                </li>
+                <li>
+                    <button class="completeBtn" onclick="Completed()"></button>
+                    <textarea class="to-do_text" rows="1" cols="10">Dishes</textarea>
+                    <input id="date" type="datetime-local" max="2030-12-31">
+                    <span class="close">
+                        <button class="removeBtn" onclick="Remove()" padding="5px">Remove</button>
+                    </span>
+                </li>
+                <li>
+                    <button class="completeBtn" onclick="Completed()"></button>
+                    <textarea class="to-do_text" rows="1" cols="10">Walk Dog</textarea>
+                    <input id="date" type="datetime-local" max="2030-12-31">
+                    <span class="close">
+                        <button class="removeBtn" onclick="Remove()" padding="5px">Remove</button>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="completed">
+        <div class="Clist">
+            <h1 class="Title">Completed</h1>
+            <ul id="CItem">
+            </ul>
+        </div>
+    </section>
+
+</body>
+
+</html>
