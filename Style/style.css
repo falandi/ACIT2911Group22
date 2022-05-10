@@ -38,26 +38,21 @@ body {
     font-size: 30px;
 }
 
-.new_to-do {
+.search-wrapper {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
-.addBtn {
-    background-color: var(--Baige);
-    border: solid;
-}
-
-.addBtn:hover {
-    background-color: #bb13e1;
-}
-
-#myInput {
+#search {
     border: solid;
     width: 20%;
     padding: 10px;
     font-size: 16px;
+}
+
+.hide {
+    display: none;
 }
 
 .to-do {
