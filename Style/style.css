@@ -136,3 +136,23 @@ textarea {
     border: none;
     overflow: hidden;
 }
+
+.add-task-btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#myInput {
+    border: solid;
+    width: 231.6px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.addBtn {
+    height: 40.4px;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+  }
