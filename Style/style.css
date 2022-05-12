@@ -110,6 +110,11 @@ ul li:hover {
     background-color: red;
 }
 
+span.close {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .completed {
     display: flex;
     justify-content: center;

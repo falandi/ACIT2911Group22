@@ -7,6 +7,10 @@ function newElement() {
       Remove.setAttribute("onClick", "Remove()")
       Remove.setAttribute("padding", "5px")
       Remove.textContent = "Remove"
+    var Edit = document.createElement("button")
+      Edit.setAttribute("class", "editBtn")
+      Edit.setAttribute("onClick", "Edit()")
+      Edit.textContent = "Edit"
     var li = document.createElement("li")
     var textarea = document.createElement("textarea")
       textarea.setAttribute("rows","1")
@@ -31,6 +35,7 @@ function newElement() {
     var span = document.createElement("SPAN")
     span.className  = "close"
     span.appendChild(Remove)
+    span.appendChild(Edit)
     li.appendChild(span)
 
 }
