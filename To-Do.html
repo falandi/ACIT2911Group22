@@ -1,72 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style/style.css">
+        <script src="Style/style.js"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style/style.css">
-    <script src="Style/style.js"></script>
-</head>
+    <body>
 
-<body>
-
-    <div class="sidebar">
-        <div class="Newlist">
-            <input id="myLists" type="text" placeholder="New List">
-            <button onclick="newList()" class="addBtn">ADD</button>
+        <div class="sidebar">
+            <div class="Newlist">
+                <input id="myLists" type="text" placeholder="New List">
+                <button onclick="newList()" class="addBtn">ADD</button>
+            </div>
+            <div>
+                <ul id="lists">
+                </ul>
+            </div>
         </div>
-        <div>
-            <ul id="lists">
-            </ul>
+
+        <div class="search-wrapper">
+            <input type="search" id="search" placeholder="Search To-Do" data-search>
         </div>
-    </div>
-
-    <div class="new_to-do">
-        <input id="myInput" type="text" placeholder="New To-Do">
-        <button onclick="newElement()" class="addBtn">ADD</button>
-    </div>
 
 
-    <div class="to-do">
-        <div class="list">
-            <h1 class="Title">To-Do</h1>
-            <ul id="lItem">
-                <li>
-                    <button class="completeBtn" onclick="Completed()"></button>
-                    <textarea class="to-do_text" rows="1" cols="10">Homework</textarea>
-                    <input id="date" type="datetime-local" max="2030-12-31">
-                    <span class="close">
-                        <button class="removeBtn" onclick="Remove()" padding="5px">Remove</button>
-                    </span>
-                </li>
-                <li>
-                    <button class="completeBtn" onclick="Completed()"></button>
-                    <textarea class="to-do_text" rows="1" cols="10">Dishes</textarea>
-                    <input id="date" type="datetime-local" max="2030-12-31">
-                    <span class="close">
-                        <button class="removeBtn" onclick="Remove()" padding="5px">Remove</button>
-                    </span>
-                </li>
-                <li>
-                    <button class="completeBtn" onclick="Completed()"></button>
-                    <textarea class="to-do_text" rows="1" cols="10">Walk Dog</textarea>
-                    <input id="date" type="datetime-local" max="2030-12-31">
-                    <span class="close">
-                        <button class="removeBtn" onclick="Remove()" padding="5px">Remove</button>
-                    </span>
-                </li>
-            </ul>
+        <div class="to-do">
+            <div class="list">
+                <h1 class="Title">To-Do</h1>
+                <ul id="lItem">
+                    <li>
+                        <button class="completeBtn" onclick="Completed()"></button>
+                        <textarea class="to-do_text" rows="1" cols="10">Homework</textarea>
+                        <input id="date" type="datetime-local" max="2030-12-31">
+                        <span class="close">
+                            <button class="removeBtn" onclick="deleteConfirmation()" padding="5px">Remove</button
+                            <button class="removeBtn" onclick="Remove()" padding="5px">Remove</button>
+                            <button class="editBtn" onclick="Edit()">Edit</button>
+                        </span>
+                    </li>
+                    <li>
+                        <button class="completeBtn" onclick="Completed()"></button>
+                        <textarea class="to-do_text" rows="1" cols="10">Dishes</textarea>
+                        <input id="date" type="datetime-local" max="2030-12-31">
+                        <span class="close">
+                            <button class="removeBtn" onclick="deleteConfirmation()" padding="5px">Remove</button>
+                            <button class="removeBtn" onclick="Remove()" padding="5px">Remove</button>
+
+                            <button class="editBtn" onclick="Edit()">Edit</button>
+                        </span>
+                    </li>
+                    <li>
+                        <button class="completeBtn" onclick="Completed()"></button>
+                        <textarea class="to-do_text" rows="1" cols="10">Walk Dog</textarea>
+                        <input id="date" type="datetime-local" max="2030-12-31">
+                        <span class="close">
+                            <button class="removeBtn" onclick="deleteConfirmation()" padding="5px">Remove</button>
+                            <button class="removeBtn" onclick="Remove()" padding="5px">Remove</button>
+                            <button class="editBtn" onclick="Edit()">Edit</button>
+                        </span>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <section class="completed">
-        <div class="Clist">
-            <h1 class="Title">Completed</h1>
-            <ul id="CItem">
-            </ul>
+        <section class="completed">
+            <div class="Clist">
+                <h1 class="Title">Completed</h1>
+                <ul id="CItem">
+                </ul>
+            </div>
+        </section>
+
+        <div class="add-task-btn">
+            <div class="new-to-do">
+                <input id="myInput" type="text" placeholder="New To-Do">
+                <button onclick="newElement()" class="addBtn">ADD</button>
+            </div>
         </div>
-    </section>
 
-</body>
-
+    </body>
 </html>

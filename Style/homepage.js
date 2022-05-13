@@ -3,3 +3,5 @@ function clickButton() {
     onclick="location.href='To-Do.html';"
     button.setAttribute("onclick")
 }
+
+module.exports = clickButton

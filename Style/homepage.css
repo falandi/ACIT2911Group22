@@ -28,7 +28,6 @@ body, html {
   size-adjust: 600%;
 }
 
-
 .container {
   width: 400px;
   height: 400px;
@@ -107,8 +106,6 @@ svg {
   stroke-dashoffset: 150;
   transition: 1s ease-in-out;
 }
-
-
 
 .btn:hover {
   transition: 1s ease-in-out;
