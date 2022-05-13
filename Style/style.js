@@ -90,3 +90,4 @@ function moveListItem() {
 }
 
 module.exports = deleteConfirmation, Completed, Remove, newList, moveListItem
+
