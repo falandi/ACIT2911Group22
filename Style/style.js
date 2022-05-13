@@ -4,9 +4,13 @@ function newElement() {
       button.setAttribute("onClick", "Completed()")
     var Remove = document.createElement("button")
       Remove.setAttribute("class", "removeBtn")
-      Remove.setAttribute("onClick", "Remove()")
+      Remove.setAttribute("onClick", "deleteConfirmation()")
       Remove.setAttribute("padding", "5px")
       Remove.textContent = "Remove"
+    var Edit = document.createElement("button")
+      Edit.setAttribute("class", "editBtn")
+      Edit.setAttribute("onClick", "Edit()")
+      Edit.textContent = "Edit"
     var li = document.createElement("li")
     var textarea = document.createElement("textarea")
       textarea.setAttribute("rows","1")
@@ -31,6 +35,7 @@ function newElement() {
     var span = document.createElement("SPAN")
     span.className  = "close"
     span.appendChild(Remove)
+    span.appendChild(Edit)
     li.appendChild(span)
 
 }
@@ -64,3 +69,24 @@ function Completed() {
   console.log(item)
 }
 
+const searchInput = document.querySelector("data-search")
+
+searchInput.addEventListener("input", (e) => {
+  const value = e.target.value
+  console.log(value)
+
+})
+
+function deleteConfirmation() {
+  let confirmation = "Are you sure you want to delete this task?";
+  if (confirm(confirmation) == true) {
+    Remove();
+  }
+}
+
+function moveListItem() {
+  toDelete = document.getElementById("lItem")
+  
+}
+
+module.exports = deleteConfirmation, Completed, Remove, newList, moveListItem
