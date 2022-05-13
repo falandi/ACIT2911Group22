@@ -4,7 +4,7 @@ function newElement() {
       button.setAttribute("onClick", "Completed()")
     var Remove = document.createElement("button")
       Remove.setAttribute("class", "removeBtn")
-      Remove.setAttribute("onClick", "Remove()")
+      Remove.setAttribute("onClick", "deleteConfirmation()")
       Remove.setAttribute("padding", "5px")
       Remove.textContent = "Remove"
     var Edit = document.createElement("button")
@@ -76,4 +76,18 @@ searchInput.addEventListener("input", (e) => {
   console.log(value)
 
 })
+
+function deleteConfirmation() {
+  let confirmation = "Are you sure you want to delete this task?";
+  if (confirm(confirmation) == true) {
+    Remove();
+  }
+}
+
+function moveListItem() {
+  toDelete = document.getElementById("lItem")
+  
+}
+
+module.exports = deleteConfirmation, Completed, Remove, newList, moveListItem
 
