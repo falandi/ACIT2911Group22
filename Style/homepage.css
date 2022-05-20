@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
 
 #text{
-    position: absolute;
-    left: 45%
+  display: flex;
+  justify-content: center;
+}
 
-  
-
+h2 {
+  display: flex;
+  justify-content: center;
 }
 
 body, html {
@@ -13,7 +15,7 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #9dccfa;
+  background: #f2e9e1;
   overflow: hidden;
   font-family: 'Lato', sans-serif;
   /* background-image:url('beach.gif');
@@ -27,7 +29,6 @@ body, html {
   image-rendering: optimizeQuality;
   size-adjust: 600%;
 }
-
 
 .container {
   width: 400px;
@@ -91,7 +92,7 @@ body, html {
   width: 180px;
   height: 60px;
   cursor: pointer;
-  background: transparent;
+  background: #91C9FF;
   border: 1px solid #91C9FF;
   outline: none;
   transition: 1s ease-in-out;
@@ -107,8 +108,6 @@ svg {
   stroke-dashoffset: 150;
   transition: 1s ease-in-out;
 }
-
-
 
 .btn:hover {
   transition: 1s ease-in-out;
