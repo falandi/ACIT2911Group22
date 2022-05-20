@@ -1,5 +1,5 @@
 language: node_js
 node_js:
   - 16
- before_install:
- - npm install jest cli
+install:
+- npm install jest cli
