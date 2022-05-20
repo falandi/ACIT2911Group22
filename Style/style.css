@@ -107,7 +107,7 @@ ul li:hover {
 }
 
 .removeBtn:hover {
-    background-color: red;
+    color: crimson;
 }
 
 span.close {
