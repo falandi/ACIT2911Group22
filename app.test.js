@@ -7,6 +7,8 @@ jest.setTimeout(17000);
 
 
 jest.useRealTimers();
+
+//testing app endpoints
 describe('Test endpoints', () => {
   it('tests the homepage get request', async () => {
     const response = await request.get('/')
