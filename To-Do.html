@@ -10,19 +10,8 @@
 
     <body>
 
-        <div class="sidebar">
-            <div class="Newlist">
-                <input id="myLists" type="text" placeholder="New List">
-                <button onclick="newList()" class="addBtn">ADD</button>
-            </div>
-            <div>
-                <ul id="lists">
-                </ul>
-            </div>
-        </div>
-
         <div class="search-wrapper">
-            <input type="search" id="search" placeholder="Search To-Do" data-search>
+            <input type="text" id="search" placeholder="Search To-Do" onkeyup="search()">
         </div>
 
 
@@ -30,34 +19,28 @@
             <div class="list">
                 <h1 class="Title">To-Do</h1>
                 <ul id="lItem">
-                    <li>
+                    <li class="task">
                         <button class="completeBtn" onclick="Completed()"></button>
                         <textarea class="to-do_text" rows="1" cols="10">Homework</textarea>
                         <input id="date" type="datetime-local" max="2030-12-31">
                         <span class="close">
-                            <button class="removeBtn" onclick="deleteConfirmation()" padding="5px">Remove</button
-                            <button class="removeBtn" onclick="Remove()" padding="5px">Remove</button>
-                            <button class="editBtn" onclick="Edit()">Edit</button>
+                            <button class="removeBtn" onclick="deleteConfirmation()" padding="5px">Remove</button>
                         </span>
                     </li>
-                    <li>
+                    <li class="task">
                         <button class="completeBtn" onclick="Completed()"></button>
                         <textarea class="to-do_text" rows="1" cols="10">Dishes</textarea>
                         <input id="date" type="datetime-local" max="2030-12-31">
                         <span class="close">
                             <button class="removeBtn" onclick="deleteConfirmation()" padding="5px">Remove</button>
-                            <button class="removeBtn" onclick="Remove()" padding="5px">Remove</button>
-                            <button class="editBtn" onclick="Edit()">Edit</button>
                         </span>
                     </li>
-                    <li>
+                    <li class="task">
                         <button class="completeBtn" onclick="Completed()"></button>
                         <textarea class="to-do_text" rows="1" cols="10">Walk Dog</textarea>
                         <input id="date" type="datetime-local" max="2030-12-31">
                         <span class="close">
                             <button class="removeBtn" onclick="deleteConfirmation()" padding="5px">Remove</button>
-                            <button class="removeBtn" onclick="Remove()" padding="5px">Remove</button>
-                            <button class="editBtn" onclick="Edit()">Edit</button>
                         </span>
                     </li>
                 </ul>
@@ -72,12 +55,12 @@
             </div>
         </section>
 
-        <div class="add-task-btn">
+        <footer class="add-task-btn">
             <div class="new-to-do">
                 <input id="myInput" type="text" placeholder="New To-Do">
                 <button onclick="newElement()" class="addBtn">ADD</button>
             </div>
-        </div>
+        </footer>
 
     </body>
 </html>
