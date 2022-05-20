@@ -1,5 +1,0 @@
-const deleteConfirmation = require('./Style/style')
-const Completed = require('./Style/style')
-const Remove = require('./Style/style')
-const newList = require('./Style/style')
-const moveListItem = require('./Style/style')
