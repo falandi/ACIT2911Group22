@@ -1,8 +1,7 @@
 :root {
-    --LightBlue: #47d8e3;
-    --Purple: #575279;
-    --Pink: #b4637a;
+    --LightBlue: #9dccfa;
     --Baige: #faf4ed;
+    --off-white: #f5f5f5;
 }
 
 body {
@@ -10,32 +9,6 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: var(--LightBlue);
-}
-
-.Newlist {
-    display: flex;
-    flex-direction: row;
-    padding: 25px;
-}
-
-#myLists {
-    font-size: 16px;
-    border: solid;
-}
-
-.sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 300px;
-    height: 100%;
-    background-color: var(--Purple);
-    word-wrap: break-word;
-    border: solid;
-}
-
-#lists {
-    font-size: 30px;
 }
 
 .search-wrapper {
@@ -70,9 +43,10 @@ body {
 
 .list {
     overflow: auto;
-    height: 280px;
-    width: 45%;
-    background-color: #f5f5f5;
+    max-height: 40vh;
+    height: 100%;
+    width: 75%;
+    background-color: var(--off-white);
     border: solid;
     border-radius: 25px;
 }
@@ -83,7 +57,8 @@ body {
 }
 
 .to-do_text {
-    background-color: #f5f5f5;
+    background-color: var(--off-white);
+    overflow-wrap: normal;
 }
 
 ul li {
@@ -107,7 +82,7 @@ ul li:hover {
 }
 
 .removeBtn:hover {
-    color: crimson;
+    background-color: red;
 }
 
 span.close {
@@ -122,9 +97,10 @@ span.close {
 }
 
 .Clist {
-    height: 280px;
-    width: 45%;
-    background-color: #f5f5f5;
+    max-height: 40vh;
+    height: 100%;
+    width: 75%;
+    background-color: var(--off-white);
     overflow: auto;
     border: solid;
     border-radius: 25px;
@@ -143,9 +119,10 @@ textarea {
 }
 
 .add-task-btn {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    display: inline-block;
+    position: fixed;
+    bottom: 3px;
+    left: 40%;
 }
 
 #myInput {
@@ -156,8 +133,7 @@ textarea {
 }
 
 .addBtn {
-    height: 40.4px;
-    float: right;
-    text-align: center;
+    height: 44px;
     cursor: pointer;
-  }
+    border: solid;
+}
