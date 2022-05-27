@@ -1,5 +1,4 @@
 function newElement() {
-<<<<<<< Updated upstream
   var button = document.createElement("button")
     button.setAttribute("class", "completeBtn")
     button.setAttribute("onClick", "Completed()")
@@ -36,7 +35,6 @@ function newElement() {
   li.appendChild(span)
 
   document.getElementById("myInput").value = ""
-=======
     var button = document.createElement("button")
       button.setAttribute("class", "completeBtn")
       button.setAttribute("onClick", "Completed()")
@@ -75,7 +73,6 @@ function newElement() {
     span.appendChild(Remove)
     span.appendChild(Edit)
     li.appendChild(span)
->>>>>>> Stashed changes
 
 }
 
@@ -146,31 +143,7 @@ for (var i=0; i < li.length;i++) {
 
 }
 
-<<<<<<< Updated upstream
 }
 
 // module.exports = deleteConfirmation, Completed, Remove, newList, moveListItem
 
-=======
-const searchInput = document.querySelector("data-search")
-
-searchInput.addEventListener("input", (e) => {
-  const value = e.target.value
-  console.log(value)
-
-})
-
-function deleteConfirmation() {
-  let confirmation = "Are you sure you want to delete this task?";
-  if (confirm(confirmation) == true) {
-    Remove();
-  }
-}
-
-function moveListItem() {
-  toDelete = document.getElementById("lItem")
-  
-}
-
-module.exports = deleteConfirmation, Completed, Remove, newList, moveListItem
->>>>>>> Stashed changes
