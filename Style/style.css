@@ -11,35 +11,6 @@ body {
     background-color: var(--LightBlue);
 }
 
-<<<<<<< Updated upstream
-=======
-.Newlist {
-    display: flex;
-    flex-direction: row;
-    padding: 25px;
-}
-
-#myLists {
-    font-size: 16px;
-    border: solid;
-}
-
-.sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 300px;
-    height: 100%;
-    background-color: var(--Purple);
-    word-wrap: break-word;
-    border: solid;
-}
-
-#lists {
-    font-size: 30px;
-}
-
->>>>>>> Stashed changes
 .search-wrapper {
     display: flex;
     justify-content: center;
@@ -72,16 +43,10 @@ body {
 
 .list {
     overflow: auto;
-<<<<<<< Updated upstream
     max-height: 40vh;
     height: 100%;
     width: 75%;
     background-color: var(--off-white);
-=======
-    height: 280px;
-    width: 45%;
-    background-color: #f5f5f5;
->>>>>>> Stashed changes
     border: solid;
     border-radius: 25px;
 }
