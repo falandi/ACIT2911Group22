@@ -15,7 +15,3 @@ describe('Test Button component', () => {
       button.find('button').simulate('click');
       expect(clickButton.mock.calls.length).toEqual(1);
     });
-  });
-
-
-  
