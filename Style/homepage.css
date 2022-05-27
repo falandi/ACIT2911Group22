@@ -3,6 +3,7 @@
 #text{
   display: flex;
   justify-content: center;
+  padding-top: 150px;
 }
 
 h2 {
@@ -41,31 +42,6 @@ body, html {
   justify-content: center;
   align-items: center;
 }
-
-.container2 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  left: 25%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container3 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  left: 75%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 .center {
   width: 180px;
@@ -124,4 +100,15 @@ svg {
   font-weight: 100;
 }
 
+footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
 
+.text-center {
+  text-align: center;
+  color: #31748f;
+  font-weight: bolder;
+}
